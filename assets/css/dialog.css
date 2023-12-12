@@ -1,0 +1,109 @@
+::backdrop {
+  background-color: white;
+  opacity: 0.75;
+}
+.pokemonDialog {
+  margin: 5rem auto;
+  border: none;
+  padding: 0;
+  padding-top: 2rem;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.closeDialog {
+  height: 30px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dialogContent {
+  height: 100%;
+}
+
+.dialogHeader {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1rem;
+}
+
+.dialogHeaderTexts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-flow: row-reverse;
+}
+
+.dialogNumber {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.dialogName {
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.dialogTypes {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 3rem;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.dialogType {
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  filter: brightness(1.1);
+  color: #fff;
+  text-align: center;
+}
+
+.dialogImage {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dialogInfos {
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1.5rem 1rem;
+  margin-top: -1rem;
+}
+
+.dialogPokemonStatus {
+  display: grid;
+  grid-template-columns: 0.35fr auto;
+  padding-top: 1rem;
+  border-top: 1px solid lightgray;
+}
+
+.statusTitle {
+  color: gray;
+  margin-bottom: 1rem;
+  font-size: 0.856rem;
+}
+
+.statusInfo {
+  color: #000;
+  font-size: 0.856rem;
+}
+
+@media screen and (min-width: 576px) {
+  .pokemonDialog {
+    width: 570px;
+  }
+  .dialogPokemonStatus {
+    grid-template-columns: 0.3fr auto;
+    padding-inline: 2rem;
+  }
+}
